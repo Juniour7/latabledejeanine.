@@ -43,7 +43,7 @@ const About: React.FC = () => {
               <div className="flex-shrink-0">
                 <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg">
                   <img 
-                    src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                    src="/profile.jpg" 
                     alt="Fabiola Tokore"
                     className="w-full h-full object-cover"
                   />

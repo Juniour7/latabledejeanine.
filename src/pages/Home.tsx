@@ -171,7 +171,7 @@ const Home: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ 
-            backgroundImage: 'url(https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1200)'
+            backgroundImage: 'url(/cover.jpeg)'
           }}
         ></div>
         <div className="relative container mx-auto px-4 text-center">
