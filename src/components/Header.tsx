@@ -46,13 +46,13 @@ const Header: React.FC = () => {
             <Link to="/" className="flex items-center">
               <div className="w-16 h-16 mr-4">
                 <img 
-                  src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                  src="/logo.jpg" 
                   alt="La Table de Jeanine" 
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">La Table de Jeanine</h1>
+                <h1 className="text-2xl font-bold text-gray-900 hidden md:block">La Table de Jeanine</h1>
               </div>
             </Link>
 

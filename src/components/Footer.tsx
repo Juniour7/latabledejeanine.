@@ -7,10 +7,10 @@ const Footer = () => {
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="flex items-start">
+            <div className="flex flex-col  items-start">
               <div className="w-16 h-16 mr-4">
                 <img 
-                  src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                  src="/logo.jpg" 
                   alt="La Table de Jeanine" 
                   className="w-full h-full object-cover rounded-full"
                 />
