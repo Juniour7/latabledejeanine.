@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import ScrollToTop from './components/ScrollToTop';
@@ -13,6 +12,7 @@ import Brunchs from './pages/services/Brunchs';
 import ChefDomicile from './pages/services/ChefDomicile';
 import Traiteur from './pages/services/Traiteur';
 import Cart from './components/Cart';
+import Footer from './components/Footer';
 import { CartProvider } from './context/CartContext';
 
 function App() {
@@ -34,6 +34,7 @@ function App() {
             <Route path="/services/chef-domicile" element={<ChefDomicile />} />
             <Route path="/services/traiteur" element={<Traiteur />} />
           </Routes>
+          <Footer />
           <Cart />
         </div>
       </Router>

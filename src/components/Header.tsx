@@ -69,10 +69,12 @@ const Header: React.FC = () => {
               </Link>
               
               {/* Services Dropdown */}
-              <div className="relative">
+              <div 
+                className="relative py-3"
+                onMouseEnter={() => setIsServicesOpen(true)}
+                onMouseLeave={() => setIsServicesOpen(false)}
+              >
                 <button
-                  onMouseEnter={() => setIsServicesOpen(true)}
-                  onMouseLeave={() => setIsServicesOpen(false)}
                   className={`font-medium transition-colors duration-200 flex items-center ${
                     location.pathname.startsWith('/services') 
                       ? 'text-orange-600 font-bold' 
@@ -85,9 +87,7 @@ const Header: React.FC = () => {
                 
                 {isServicesOpen && (
                   <div 
-                    className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border z-50"
-                    onMouseEnter={() => setIsServicesOpen(true)}
-                    onMouseLeave={() => setIsServicesOpen(false)}
+                    className="absolute top-8 left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border z-50"
                   >
                     {services.map((service) => (
                       <Link
@@ -101,6 +101,7 @@ const Header: React.FC = () => {
                   </div>
                 )}
               </div>
+
 
               <Link 
                 to="/tarifs" 
@@ -159,18 +160,19 @@ const Header: React.FC = () => {
             </div>
 
             {/* Desktop Cart Button */}
-            <button
-              className="hidden md:flex"
-              onClick={() => setIsCartOpen(true)}
-              className="relative bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-colors duration-200 items-center font-medium"
-            >
-              Panier
+            <div className='hidden md:flex'>
+              <button
+                onClick={() => setIsCartOpen(true)}
+                className="relative bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-colors duration-200 items-center font-medium"
+              >
+                Panier
               {totalItems > 0 && (
                 <span className="absolute -top-2 -right-2 bg-gray-900 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
                   {totalItems}
                 </span>
               )}
             </button>
+            </div>
           </div>
         </div>
         
