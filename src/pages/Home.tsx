@@ -163,6 +163,50 @@ const Home: React.FC = () => {
     });
   };
 
+  const services = [
+  {
+    img: "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=500",
+    icon: <Building2 className="w-16 h-16 text-white" />,
+    title: "Corporate",
+    description: "Solutions professionnelles pour vos événements d'entreprise",
+    path: "/services/corporate",
+    overlayColor: "bg-gray-900"
+  },
+  {
+    img: "/wedding/img (3).jpeg",
+    icon: <Heart className="w-16 h-16 text-white" />,
+    title: "Mariage",
+    description: "Célébrez le plus beau jour de votre vie avec style",
+    path: "/services/mariage",
+    overlayColor: "bg-pink-600"
+  },
+  {
+    img: "/brunch/img (4).jpeg",
+    icon: <Coffee className="w-16 h-16 text-white" />,
+    title: "Brunchs",
+    description: "Commencez votre journée avec style et saveur",
+    path: "/services/brunchs",
+    overlayColor: "bg-orange-500"
+  },
+  {
+    img: "/profile.jpg",
+    icon: <ChefHat className="w-16 h-16 text-white" />,
+    title: "Chef à domicile",
+    description: "Une expérience culinaire unique chez vous",
+    path: "/services/chef-domicile",
+    overlayColor: "bg-purple-600"
+  },
+  {
+    img: "/traiteur/img.jpeg",
+    icon: <Utensils className="w-16 h-16 text-white" />,
+    title: "Service traiteur",
+    description: "Service traiteur complet pour tous vos événements",
+    path: "/services/traiteur",
+    overlayColor: "bg-blue-600"
+  }
+];
+
+
   return (
     <div className="bg-white pt-32">
       {/* Hero Section */}
@@ -207,126 +251,37 @@ const Home: React.FC = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Corporate */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="relative h-48">
-                <img 
-                  src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=500" 
-                  alt="Corporate"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gray-900 bg-opacity-40 flex items-center justify-center">
-                  <Building2 className="w-16 h-16 text-white" />
+            {services.map((service, index) => (
+              <div 
+                        key={index}
+                className={`bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
+                  service.title === "Service traiteur" ? "md:col-span-2 lg:col-span-1" : ""
+                }`}
+              >
+                <div className="relative h-48">
+                  <img 
+                    src={service.img} 
+                    alt={service.title}
+                    className="w-full h-full object-cover "
+                  />
+                  <div className={`absolute inset-0 ${service.overlayColor} bg-opacity-40 flex items-center justify-center`}>
+                    {service.icon}
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <Link
+                    to={service.path}
+                    className="inline-block bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-colors duration-200 font-medium"
+                  >
+                    En savoir plus
+                  </Link>
                 </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Corporate</h3>
-                <p className="text-gray-600 mb-4">Solutions professionnelles pour vos événements d'entreprise</p>
-                <Link
-                  to="/services/corporate"
-                  className="inline-block bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-colors duration-200 font-medium"
-                >
-                  En savoir plus
-                </Link>
-              </div>
-            </div>
-
-            {/* Mariage */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="relative h-48">
-                <img 
-                  src="https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=500" 
-                  alt="Mariage"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-pink-600 bg-opacity-40 flex items-center justify-center">
-                  <Heart className="w-16 h-16 text-white" />
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Mariage</h3>
-                <p className="text-gray-600 mb-4">Célébrez le plus beau jour de votre vie avec style</p>
-                <Link
-                  to="/services/mariage"
-                  className="inline-block bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-colors duration-200 font-medium"
-                >
-                  En savoir plus
-                </Link>
-              </div>
-            </div>
-
-            {/* Brunchs */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="relative h-48">
-                <img 
-                  src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=500" 
-                  alt="Brunchs"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-orange-500 bg-opacity-40 flex items-center justify-center">
-                  <Coffee className="w-16 h-16 text-white" />
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Brunchs</h3>
-                <p className="text-gray-600 mb-4">Commencez votre journée avec style et saveur</p>
-                <Link
-                  to="/services/brunchs"
-                  className="inline-block bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-colors duration-200 font-medium"
-                >
-                  En savoir plus
-                </Link>
-              </div>
-            </div>
-
-            {/* Chef à domicile */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="relative h-48">
-                <img 
-                  src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=500" 
-                  alt="Chef à domicile"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-purple-600 bg-opacity-40 flex items-center justify-center">
-                  <ChefHat className="w-16 h-16 text-white" />
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Chef à domicile</h3>
-                <p className="text-gray-600 mb-4">Une expérience culinaire unique chez vous</p>
-                <Link
-                  to="/services/chef-domicile"
-                  className="inline-block bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-colors duration-200 font-medium"
-                >
-                  En savoir plus
-                </Link>
-              </div>
-            </div>
-
-            {/* Service traiteur */}
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 md:col-span-2 lg:col-span-1">
-              <div className="relative h-48">
-                <img 
-                  src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=500" 
-                  alt="Service traiteur"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-blue-600 bg-opacity-40 flex items-center justify-center">
-                  <Utensils className="w-16 h-16 text-white" />
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Service traiteur</h3>
-                <p className="text-gray-600 mb-4">Service traiteur complet pour tous vos événements</p>
-                <Link
-                  to="/services/traiteur"
-                  className="inline-block bg-orange-600 text-white px-6 py-2 rounded-md hover:bg-orange-700 transition-colors duration-200 font-medium"
-                >
-                  En savoir plus
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
+
         </div>
       </section>
 

@@ -27,9 +27,9 @@ const ChefDomicile: React.FC = () => {
       {/* Header */}
       <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16 relative">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-30"
+          className="absolute inset-0 bg-cover bg-top bg-fixed opacity-30"
           style={{ 
-            backgroundImage: 'url(https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1200)'
+            backgroundImage: 'url(/profile.jpg)'
           }}
         ></div>
         <div className="container mx-auto px-4 text-center">
