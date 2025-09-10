@@ -26,7 +26,7 @@ const Menu: React.FC = () => {
       description: "Délicieuses brochettes de bœuf grillées",
       price: 5000,
       category: "entrees",
-      image: "/menu/img (1).jpeg",
+      image: "/menu/1.jpeg",
       rating: 4.8,
       prepTime: "25 min",
       serves: 1
@@ -37,7 +37,7 @@ const Menu: React.FC = () => {
       description: "Pastels croustillants au poulet fumé",
       price: 2000,
       category: "entrees",
-      image: "/menu/img (2).jpeg",
+      image: "/menu/2.jpeg",
       rating: 4.7,
       prepTime: "20 min",
       serves: 1
@@ -48,7 +48,7 @@ const Menu: React.FC = () => {
       description: "Beignets moelleux de manioc",
       price: 2000,
       category: "entrees",
-      image: "/menu/img (3).jpeg",
+      image: "/menu/3.jpeg",
       rating: 4.6,
       prepTime: "15 min",
       serves: 1
@@ -59,7 +59,7 @@ const Menu: React.FC = () => {
       description: "Spécialité de la maison",
       price: 2500,
       category: "entrees",
-      image: "/menu/img (4).jpeg",
+      image: "/menu/4.jpeg",
       rating: 4.7,
       prepTime: "20 min",
       serves: 1
@@ -70,7 +70,7 @@ const Menu: React.FC = () => {
       description: "Pastels, Beignets de manioc, BH, Brochettes de bœuf",
       price: 10000,
       category: "entrees",
-      image: "/menu/img (5).jpeg",
+      image: "/menu/5.jpeg",
       rating: 4.9,
       prepTime: "30 min",
       serves: 2
@@ -82,7 +82,7 @@ const Menu: React.FC = () => {
       description: "Plat traditionnel camerounais aux arachides",
       price: 7000,
       category: "plats",
-      image: "/menu/img (6).jpeg",
+      image: "/menu/6.jpeg",
       rating: 4.8,
       prepTime: "45 min",
       serves: 1
@@ -93,7 +93,7 @@ const Menu: React.FC = () => {
       description: "Viande, poisson fumé, crevettes",
       price: 10000,
       category: "plats",
-      image: "/menu/img (7).jpeg",
+      image: "/menu/7.jpeg",
       rating: 4.9,
       prepTime: "50 min",
       serves: 1
@@ -104,7 +104,7 @@ const Menu: React.FC = () => {
       description: "Plat traditionnel avec légumes verts",
       price: 7000,
       category: "plats",
-      image: "https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/menu/8.jpeg",
       rating: 4.7,
       prepTime: "40 min",
       serves: 1
@@ -115,7 +115,7 @@ const Menu: React.FC = () => {
       description: "Poulet ou porc sauté aux légumes et plantains",
       price: 7000,
       category: "plats",
-      image: "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/menu/9.jpeg",
       rating: 4.8,
       prepTime: "35 min",
       serves: 1
@@ -126,7 +126,7 @@ const Menu: React.FC = () => {
       description: "Plat épicé au porc ou poisson",
       price: 7000,
       category: "plats",
-      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/menu/10.jpeg",
       rating: 4.6,
       prepTime: "40 min",
       serves: 1
@@ -137,7 +137,7 @@ const Menu: React.FC = () => {
       description: "Légumes verts sucrés traditionnels",
       price: 5000,
       category: "plats",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/menu/11.jpeg",
       rating: 4.5,
       prepTime: "35 min",
       serves: 1
@@ -171,7 +171,7 @@ const Menu: React.FC = () => {
       description: "Poisson frais grillé aux épices",
       price: 8000,
       category: "grillades",
-      image: "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/menu/14.jpeg",
       rating: 4.8,
       prepTime: "30 min",
       serves: 1
@@ -204,7 +204,7 @@ const Menu: React.FC = () => {
       description: "Demi-poulet fumé épicé",
       price: 5000,
       category: "grillades",
-      image: "https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/menu/17.jpeg",
       rating: 4.7,
       prepTime: "35 min",
       serves: 1
@@ -216,7 +216,7 @@ const Menu: React.FC = () => {
       description: "Riz au poulet ou poisson - Vendredi uniquement",
       price: 5000,
       category: "speciaux",
-      image: "https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/menu/18.jpeg",
       rating: 4.8,
       prepTime: "40 min",
       serves: 1
@@ -227,7 +227,7 @@ const Menu: React.FC = () => {
       description: "Placali avec sauce traditionnelle - Samedi uniquement",
       price: 5000,
       category: "speciaux",
-      image: "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/menu/19.jpeg",
       rating: 4.6,
       prepTime: "45 min",
       serves: 1
