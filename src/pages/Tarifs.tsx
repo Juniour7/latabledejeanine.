@@ -46,7 +46,7 @@ const Tarifs: React.FC = () => {
       `💰 Estimation: ${estimatedCost.toLocaleString('fr-FR')} FCFA\n\n` +
       `Je souhaiterais obtenir un devis personnalisé pour mon événement.`;
 
-    const whatsappUrl = `https://wa.me/22507580273?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/2250758020273?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

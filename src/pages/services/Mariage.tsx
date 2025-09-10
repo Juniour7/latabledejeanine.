@@ -118,7 +118,7 @@ const Mariage: React.FC = () => {
                   ))}
                 </ul>
                 <a
-                  href={`https://wa.me/22507580273?text=Bonjour, je suis intéressé(e) par la formule ${pkg.name} pour mon mariage.`}
+                  href={`https://wa.me/2250758020273?text=Bonjour, je suis intéressé(e) par la formule ${pkg.name} pour mon mariage.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700 transition-colors duration-200 font-medium"
@@ -156,7 +156,7 @@ const Mariage: React.FC = () => {
             Contactez-nous pour une consultation gratuite et personnalisée
           </p>
           <a
-            href="https://wa.me/22507580273?text=Bonjour, je souhaiterais organiser mon mariage avec La Table de Jeanine."
+            href="https://wa.me/2250758020273?text=Bonjour, je souhaiterais organiser mon mariage avec La Table de Jeanine."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-pink-600 px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-200 font-bold"

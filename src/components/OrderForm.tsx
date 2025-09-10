@@ -65,7 +65,7 @@ const OrderForm: React.FC<OrderFormProps> = ({ isOpen, onClose }) => {
       `💳 *Mode de paiement:* ${formData.modePaiement}\n\n` +
       `📝 *Instructions spéciales:*\n${formData.instructionsSpeciales || 'Aucune'}`;
 
-    const whatsappUrl = `https://wa.me/22507580273?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/2250758020273?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
     // Reset form and close
@@ -89,7 +89,7 @@ const OrderForm: React.FC<OrderFormProps> = ({ isOpen, onClose }) => {
   if (showRecapitulatif) {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-        <div className="bg-white rounded-lg w-full max-w-2xl max-h-[90vh] overflow-hidden">
+        <div className="bg-white rounded-lg w-full max-w-2xl max-h-[90vh] overflow-y-auto">
           <div className="flex items-center justify-between p-6 border-b bg-green-800 text-white">
             <h2 className="text-xl font-bold">📋 Récapitulatif de commande</h2>
             <button

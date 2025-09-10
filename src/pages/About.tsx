@@ -72,7 +72,7 @@ const About: React.FC = () => {
             Contactez-nous pour une expérience culinaire inoubliable
           </p>
           <a
-            href="https://wa.me/22507580273?text=Bonjour, je souhaiterais en savoir plus sur vos services."
+            href="https://wa.me/2250758020273?text=Bonjour, je souhaiterais en savoir plus sur vos services."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-orange-600 px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-200 font-bold"

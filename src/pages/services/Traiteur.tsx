@@ -201,7 +201,7 @@ const Traiteur: React.FC = () => {
             Contactez-nous pour un devis personnalisé et gratuit
           </p>
           <a
-            href="https://wa.me/22507580273?text=Bonjour, je souhaiterais un devis pour un service traiteur."
+            href="https://wa.me/2250758020273?text=Bonjour, je souhaiterais un devis pour un service traiteur."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-blue-600 px-8 py-3 rounded-md hover:bg-gray-100 transition-colors duration-200 font-bold"

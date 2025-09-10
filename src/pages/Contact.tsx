@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
       `📍 Lieu: ${formData.eventLocation}\n\n` +
       `💬 Informations supplémentaires:\n${formData.additionalInfo}`;
 
-    const whatsappUrl = `https://wa.me/22507580273?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/2250758020273?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
     setFormData({
