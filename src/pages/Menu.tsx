@@ -142,29 +142,29 @@ const Menu: React.FC = () => {
       prepTime: "35 min",
       serves: 1
     },
-    {
-      id: 12,
-      name: "Pepper soup",
-      description: "Queue de bœuf ou poisson épicé",
-      price: 7000,
-      category: "plats",
-      image: "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=400",
-      rating: 4.7,
-      prepTime: "60 min",
-      serves: 1
-    },
+    // {
+    //   id: 12,
+    //   name: "Pepper soup",
+    //   description: "Queue de bœuf ou poisson épicé",
+    //   price: 7000,
+    //   category: "plats",
+    //   image: "https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=400",
+    //   rating: 4.7,
+    //   prepTime: "60 min",
+    //   serves: 1
+    // },
     // Grillades
-    {
-      id: 13,
-      name: "Poulet braisé ou fumé (entier)",
-      description: "Poulet entier grillé à la perfection",
-      price: 8000,
-      category: "grillades",
-      image: "https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&w=400",
-      rating: 4.9,
-      prepTime: "45 min",
-      serves: 2
-    },
+    // {
+    //   id: 13,
+    //   name: "Poulet braisé ou fumé (entier)",
+    //   description: "Poulet entier grillé à la perfection",
+    //   price: 8000,
+    //   category: "grillades",
+    //   image: "https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg?auto=compress&cs=tinysrgb&w=400",
+    //   rating: 4.9,
+    //   prepTime: "45 min",
+    //   serves: 2
+    // },
     {
       id: 14,
       name: "Poisson braisé",
@@ -176,28 +176,28 @@ const Menu: React.FC = () => {
       prepTime: "30 min",
       serves: 1
     },
-    {
-      id: 15,
-      name: "Porc braisé",
-      description: "Porc grillé aux herbes",
-      price: 5000,
-      category: "grillades",
-      image: "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400",
-      rating: 4.6,
-      prepTime: "40 min",
-      serves: 1
-    },
-    {
-      id: 16,
-      name: "Queue de bœuf braisée",
-      description: "Queue de bœuf tendre et savoureuse",
-      price: 8000,
-      category: "grillades",
-      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400",
-      rating: 4.8,
-      prepTime: "90 min",
-      serves: 1
-    },
+    // {
+    //   id: 15,
+    //   name: "Porc braisé",
+    //   description: "Porc grillé aux herbes",
+    //   price: 5000,
+    //   category: "grillades",
+    //   image: "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=400",
+    //   rating: 4.6,
+    //   prepTime: "40 min",
+    //   serves: 1
+    // },
+    // {
+    //   id: 16,
+    //   name: "Queue de bœuf braisée",
+    //   description: "Queue de bœuf tendre et savoureuse",
+    //   price: 8000,
+    //   category: "grillades",
+    //   image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400",
+    //   rating: 4.8,
+    //   prepTime: "90 min",
+    //   serves: 1
+    // },
     {
       id: 17,
       name: "Choukouya de poulet fumé (1/2)",
